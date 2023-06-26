@@ -67,7 +67,7 @@ function draw() {
 	denominator.innerHTML = totalDots;
 
 	pi = 4 * (insideCircle / totalDots);
-	piSpan.innerHTML = pi;
+	piSpan.innerHTML = pi.toPrecision(21);
 
 }
 

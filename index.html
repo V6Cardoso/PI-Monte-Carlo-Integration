@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Victoπ Caπdoso</title>
+    <link href="./img/me-px.png" rel="icon" sizes="32x32">
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <div id="info">
+        <h1>Calculando o valor de π </h1>
+        <h2>(Monte Carlo integration)</h2>
+        <br>
+      </div>
+      <div class="itens">
+        <div class="control">
+          <h3>pontos por frame: <input id="input-speed" type="range" value="1" min="1" max="500" name="velocidade"> </h3>
+          <h3>fps: <input id="input-frame" type="range" value="24" min="1" max="60" name="frame rate"> </h3>
+          <img class="math" src="./img/img1.svg" height="80px">
+          <div class="math">
+            <div class="All"><div class="Sum">π ≈ 4 x </div><span class="Fraction"><span id="Numerator"></span><span id="Denominator"></span></span></div>
+          </div>
+          <h3>π ≈ <span id="pi-value"></span></h3>
+          </div>
+        <div id="canvas"></div>
+      </div>
+    </main>
+  </body>
+</html>

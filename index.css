@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(40, 40, 40);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+#info {
+    text-align: center;
+}
+
+#canvas {
+    flex-grow: 1;
+    height: 100%;
+}
+
+h1 {
+    font-size:4em;
+    color: white;
+}
+
+h2 {
+    font-size: 3em;
+    color: white;
+}
+
+h3, .math {
+    margin: 0 0 15px 10%;
+}
+
+img {
+    background-color: white;
+}
+
+h3 {
+    font-size: 3em;
+    text-align: left;
+    color: aqua;
+}
+
+.itens {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.control {
+    width: 40%;
+}
+
+@media (max-width: 1400px) {
+    .itens {
+        display: block;
+    }
+
+    .control {
+        width: 100%;
+    }
+}
+
+/* display fraction */
+.All {
+    font-size: 3em;
+    display: table-row;
+    background-color: white;
+}
+.Sum {
+    display: table-cell;
+    vertical-align: middle;
+}
+.Fraction {
+    display: table-cell;
+    text-align: center;    
+}
+#Denominator{
+    border-top: 1px solid #000;
+    display: block;
+}
+.Fraction, #Numerator, #Denominator {
+    padding: 0px 5px;    
+}
